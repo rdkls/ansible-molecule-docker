@@ -1,0 +1,10 @@
+---
+version: '3'
+services:
+  molecule:
+    build: ..
+    working_dir: /home/root
+    entrypoint: /usr/bin/molecule
+    command: test
+    volumes:
+      - .:/home/root:ro
